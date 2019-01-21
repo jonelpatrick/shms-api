@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 18, 2019 at 03:49 AM
+-- Generation Time: Jan 21, 2019 at 02:15 AM
 -- Server version: 5.6.14
 -- PHP Version: 5.5.6
 
@@ -443,7 +443,7 @@ CREATE TABLE IF NOT EXISTS `tbl_health_profile` (
   `classification` varchar(100) NOT NULL,
   `student_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=30 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=32 ;
 
 --
 -- Dumping data for table `tbl_health_profile`
@@ -469,7 +469,9 @@ INSERT INTO `tbl_health_profile` (`id`, `date_check_up`, `weight`, `height`, `bm
 (26, '2018-05-27', 233, 333, 21, 'Normal', 2),
 (27, '2018-05-28', 200, 200, 50, 'Obese', 1),
 (28, '2018-05-28', 233, 223, 46.9, 'Obese', 7),
-(29, '2018-09-01', 15.2, 12, 1055.6, 'Overweight', 11);
+(29, '2018-09-01', 15.2, 12, 1055.6, 'Overweight', 11),
+(30, '2019-01-18', 30, 60, 83.3, '<span style="color:#d70ee4;">Overweight</span>', 8),
+(31, '2019-01-18', 30, 0.23, 567.11, '<span style="color:#d70ee4;">Overweight</span>', 7);
 
 -- --------------------------------------------------------
 
