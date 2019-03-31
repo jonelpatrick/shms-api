@@ -3,7 +3,7 @@ include '../dbconnect.php';
 
 $json_response = array(); 
 
-	$query = mysqli_query($mysqli,"SELECT id,variety,credit FROM tbl_food_variety ");
+	$query = mysqli_query($mysqli,"SELECT id,variety,credit,total_carb FROM tbl_food_variety ");
 								
 
 	if (mysqli_num_rows($query) > 0) {			
@@ -13,6 +13,7 @@ $json_response = array();
 		 		$row_array['variety_id'] = $row['id'];
 		 		$row_array['variety_name'] = $row['variety'];
 		 		$row_array['credit'] = $row['credit'];
+		 		$row_array['Total Carbohydrate - unit gram'] = $row['total_carb'];
 		 		
 		 		array_push($json_response,$row_array); 			 
 

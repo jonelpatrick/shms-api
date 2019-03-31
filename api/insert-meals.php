@@ -5,22 +5,25 @@ include 'functions.php';
 $json_response = array(); 
 
 
-if(isset($_GET['student_id']) && isset($_GET['variety']) && isset($_GET['servings']) && isset($_GET['credits'])){
+if(isset($_GET['student_id']) && isset($_GET['variety']) && isset($_GET['servings']) && isset($_GET['credits']) && isset($_GET['date_eaten'])){
 	$student_id = $_GET['student_id'];
 	$variety =	$_GET['variety'];
 	$servings = $_GET['servings'];
 	$credits  = $_GET['credits'];
+	$date_eaten = $_GET['date_eaten'];
 
 	$sql = "INSERT INTO tbl_meals (								
 									student_id,
 									food_variety_id,
 									servings,
-									credits)
+									credits,
+									date_created)
 									VALUES(								
 									'$student_id',
 									'$variety',
 									'$servings',
-									'$credits')";
+									'$credits',
+									'$date_eaten')";
 
 	if (mysqli_query($mysqli,$sql)) {		
 

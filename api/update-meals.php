@@ -6,12 +6,14 @@ $json_response = array();
 $variety =	$_GET['variety'];
 $servings = $_GET['servings'];
 $credits  = $_GET['credits'];
+$date_eaten = $_GET['date_eaten'];
 $mealsid  = $_GET['meals_id'];
 
 $sql = "UPDATE tbl_meals SET 
 							food_variety_id = '$variety',
 							servings = '$servings',
-							credits = '$credits' 
+							credits = '$credits',
+							date_created = '$date_eaten' 
 						WHERE id = '$mealsid'";
 
 if (mysqli_query($mysqli,$sql)) {
