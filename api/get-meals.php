@@ -30,7 +30,7 @@ if(isset($_GET['id'])){
 			 		$row_array['student_id'] = $row['student_id'];
 			 		$row_array['food_variety_id'] = $row['food_variety_id'];
 			 		$row_array['variety'] = $row['variety'];
-			 		$row_array['Food_servings'] = $row['servings'];
+			 		$row_array['servings'] = $row['servings'];
 			 		$row_array['credits'] = $row['credits'];
 			 		$row_array['Date_Eaten'] = $row['date_created'];
 			 		$row_array['quantity'] = $row['quantity'];
@@ -75,7 +75,7 @@ if(isset($_GET['id'])){
 		 		$row_array['student_id'] = $row['student_id'];
 		 		$row_array['food_variety_id'] = $row['food_variety_id'];
 		 		$row_array['variety'] = $row['variety'];
-		 		$row_array['Food_servings'] = $row['servings'];
+		 		$row_array['servings'] = $row['servings'];
 		 		$row_array['credits'] = $row['credits'];
 		 		$row_array['Date_Eaten'] = $row['date_created'];
 		 		$row_array['quantity'] = $row['quantity'];
