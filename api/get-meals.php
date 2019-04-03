@@ -12,6 +12,8 @@ if(isset($_GET['id'])){
 											  student_id,
 											  food_variety_id,
 											  tbl_food_variety.variety variety,
+											  quantity,
+											  unit_serving,
 											  servings,
 											  credits,
 											  date_created,
@@ -28,9 +30,11 @@ if(isset($_GET['id'])){
 			 		$row_array['student_id'] = $row['student_id'];
 			 		$row_array['food_variety_id'] = $row['food_variety_id'];
 			 		$row_array['variety'] = $row['variety'];
-			 		$row_array['servings'] = $row['servings'];
+			 		$row_array['Food_servings'] = $row['servings'];
 			 		$row_array['credits'] = $row['credits'];
 			 		$row_array['Date_Eaten'] = $row['date_created'];
+			 		$row_array['quantity'] = $row['quantity'];
+			 		$row_array['unit_serving'] = $row['unit_serving'];
 			 		$row_array['Total Carbohydrates-unit gram'] = $row['total_carb'];
 			 		 	
 			 		array_push($json_response,$row_array); 			 
@@ -55,6 +59,8 @@ if(isset($_GET['id'])){
 											  student_id,
 											  food_variety_id,
 											  tbl_food_variety.variety variety,
+											  quantity,
+											  unit_serving,
 											  servings,
 											  credits,
 											  date_created,
@@ -69,13 +75,15 @@ if(isset($_GET['id'])){
 		 		$row_array['student_id'] = $row['student_id'];
 		 		$row_array['food_variety_id'] = $row['food_variety_id'];
 		 		$row_array['variety'] = $row['variety'];
-		 		$row_array['servings'] = $row['servings'];
+		 		$row_array['Food_servings'] = $row['servings'];
 		 		$row_array['credits'] = $row['credits'];
 		 		$row_array['Date_Eaten'] = $row['date_created'];
+		 		$row_array['quantity'] = $row['quantity'];
+			 	$row_array['unit_serving'] = $row['unit_serving'];
 			 	$row_array['Total Carbohydrates-unit gram'] = $row['total_carb'];
 		 		 	
 		 		array_push($json_response,$row_array); 			 
-
+		 		
 		 }			 		
 			
 	}else{
